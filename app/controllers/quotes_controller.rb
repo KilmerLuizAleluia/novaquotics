@@ -3,8 +3,10 @@ class QuotesController < ApplicationController
 
   def novaquote
     byebug
+    @quotes = Quote.all
+
     @quote = Quote.new(content: params[:text], userSender: params[:user_name])
-    @quote.save(quote);
+    @quote.save();
   end
 
   # GET /quotes

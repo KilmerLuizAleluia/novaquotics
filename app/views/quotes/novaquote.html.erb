@@ -11,6 +11,18 @@
     </tr>
   </thead>
         <%= text_field_tag :text, params[:text] %>
+
+  <tbody>
+    <% @quotes.each do |quote| %>
+      <tr>
+        <td><%= quote.content %></td>
+        <td><%= quote.userSender %></td>
+        <td><%= quote.myth %></td>
+        <td><%= quote.quoteDate %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br>
