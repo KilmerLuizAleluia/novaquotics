@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :quotes
   root 'welcome#index'
 
-  get 'adiciona' => 'quotes#adiciona'
+  get 'novaquote' => 'quotes#novaquote'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
