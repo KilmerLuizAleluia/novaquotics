@@ -8,7 +8,7 @@ class QuotesController < ApplicationController
     content = parametros[0]
     myth = parametros[2]
 
-    @quote = Quote.new(content: content, userSender: params[:username], myth: myth, quoteDate: Date.today.to_s)
+    @quote = Quote.new(content: content, userSender: params[:user_name], myth: myth, quoteDate: Time.now.strftime("%d/%m/%Y"))
     @quote.save();
   end
 
