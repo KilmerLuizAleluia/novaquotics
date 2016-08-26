@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  myth: MyString
+  quoteDate: 2016-08-25
+  string: 
+
+two:
+  content: MyString
+  myth: MyString
+  quoteDate: 2016-08-25
+  string: 
