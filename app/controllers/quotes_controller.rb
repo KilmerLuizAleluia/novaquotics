@@ -5,12 +5,6 @@ class QuotesController < ApplicationController
     byebug
     @quotes = Quote.all
 
-    a = "foobar"
-    a.slice! "foo"
-    => "foo"
-    a
-    => "bar"
-
     username = params[:text].slice! "by @"
     params[:text].slice! "by @"
 
