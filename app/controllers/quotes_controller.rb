@@ -4,7 +4,9 @@ class QuotesController < ApplicationController
   def novaquote
     byebug
     @quotes = Quote.all
-    text = params[:text]
+
+    @quote = Quote.new(content: params[:text], userSender: params[:user_name])
+    @quote.save(quote);
   end
 
 end
