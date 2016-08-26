@@ -28,7 +28,7 @@
     <section id="main-container" class="container-fluid novaquote_section">
       <h1 class="nova_title">NovaQuotics</h1>
 
-      <% @quotes.each do |quote| %>
+      <% @quotes.first(12).each do |quote| %>
         <aritcle class="card card-block nova_card">
           <p><%= quote.content %></p>
           <p class="align_right"><%= quote.myth.upcase%>, <%= quote.quoteDate.strftime("%d-%m-%Y") %></p>
