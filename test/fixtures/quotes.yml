@@ -2,12 +2,12 @@
 
 one:
   content: MyString
+  userSender: MyString
   myth: MyString
   quoteDate: 2016-08-25
-  string: 
 
 two:
   content: MyString
+  userSender: MyString
   myth: MyString
   quoteDate: 2016-08-25
-  string: 
