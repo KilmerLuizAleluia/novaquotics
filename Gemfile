@@ -40,9 +40,12 @@ gem 'spring',        group: :development
 
 # Heroku
 gem 'rails_12factor', group: :production
-
 # Debugger
 gem 'byebug'
+# Stylesheet
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 
 ruby "2.1.5"
 
