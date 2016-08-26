@@ -7,20 +7,19 @@
 
   <body>
 
-    <div id="main-container" class="container-fluid" style="background-color: #22223B; background-repeat: repeat-y-x; color: #C9ADA7">
+    <section id="main-container" class="container-fluid" style="background-color: #22223B; background-repeat: repeat-y-x; color: #C9ADA7">
       <h1>NovaQuotics</h1>
 
       <% @quotes.each do |quote| %>
-        <div class="card card-block" style="border: 2px; border-color: black; float: left; margin: 2%; background-repeat: repeat-y-x; background-color: #9A8C98; border-radius: 25px; padding: 1%; color: #F2E9E4">
-          <h4><%= quote.myth %></h4>
+        <aritcle class="card card-block" style="border: 2px; border-color: black; float: left; margin: 2%; background-repeat: repeat-y-x; background-color: #9A8C98; border-radius: 25px; padding: 1%; color: #F2E9E4; box-shadow: 3px 3px 3px #C9ADA7" >
           <p><%= quote.content %></p>
-          <p><%= quote.userSender.upcase%>, <%= quote.quoteDate.strftime("%d-%m-%Y") %></p>
-        </div>
+          <p style="text-align: right"><%= quote.myth.upcase%>, <%= quote.quoteDate.strftime("%d-%m-%Y") %></p>
+        </aritcle>
       <% end %>
 
       <br>
 
-    </div>
+    </section>
 
   </body>
 
