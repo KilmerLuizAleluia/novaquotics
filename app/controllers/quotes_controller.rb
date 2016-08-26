@@ -3,13 +3,12 @@ class QuotesController < ApplicationController
 
   def novaquote
     byebug
-    @quotes = Quote.all
 
-    username = params[:text].slice! "by @"
-    params[:text].slice! "by @"
+    parametros = params[:text].partition('by @')
+    content = parametros[0]
+    myth = parametros[2]
 
-
-    @quote = Quote.new(content: params[:text], userSender: username )0
+    @quote = Quote.new(content: content, userSender: params[:username], myth: myth, quoteDate: Date.today.to_s)
     @quote.save();
   end
 
