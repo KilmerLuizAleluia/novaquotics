@@ -41,5 +41,8 @@ gem 'spring',        group: :development
 # Heroku
 gem 'rails_12factor', group: :production
 
+# Debugger
+gem 'byebug'
+
 ruby "2.1.5"
 
