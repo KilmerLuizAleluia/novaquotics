@@ -1,31 +1,27 @@
-<h1>Listing quotes</h1>
+<!DOCTYPE html>
+<html style="background-color: #22223B">
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>Usersender</th>
-      <th>Myth</th>
-      <th>Quotedate</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <head>
+    <title>NovaQuotics</title>
+  </head>
 
-  <tbody>
-    <% @quotes.each do |quote| %>
-      <tr>
-        <td><%= quote.content %></td>
-        <td><%= quote.userSender %></td>
-        <td><%= quote.myth %></td>
-        <td><%= quote.quoteDate %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <body>
 
-<br>
+    <div id="main-container" class="container-fluid" style="background-color: #22223B; background-repeat: repeat-y-x; color: #C9ADA7">
+      <h1>NovaQuotics</h1>
 
-<%= link_to 'New Quote', new_quote_path %>
+      <% @quotes.each do |quote| %>
+        <div class="card card-block" style="border: 2px; border-color: black; float: left; margin: 2%; background-repeat: repeat-y-x; background-color: #9A8C98; border-radius: 25px; padding: 1%; color: #F2E9E4">
+          <h4><%= quote.myth %></h4>
+          <p><%= quote.content %></p>
+          <p><%= quote.userSender.upcase%>, <%= quote.quoteDate.strftime("%d-%m-%Y") %></p>
+        </div>
+      <% end %>
+
+      <br>
+
+    </div>
+
+  </body>
+
+</html>
