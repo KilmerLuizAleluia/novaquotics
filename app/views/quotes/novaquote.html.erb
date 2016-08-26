@@ -1,0 +1,27 @@
+<h1>Listing quotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Usersender</th>
+      <th>Myth</th>
+      <th>Quotedate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quotes.each do |quote| %>
+      <tr>
+        <td><%= quote.content %></td>
+        <td><%= quote.userSender %></td>
+        <td><%= quote.myth %></td>
+        <td><%= quote.quoteDate %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
