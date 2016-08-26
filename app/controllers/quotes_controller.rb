@@ -9,4 +9,10 @@ class QuotesController < ApplicationController
     @quote.save(quote);
   end
 
+  # GET /quotes
+  # GET /quotes.json
+  def index
+    @quotes = Quote.all
+  end
+
 end
