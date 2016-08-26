@@ -5,7 +5,17 @@ class QuotesController < ApplicationController
     byebug
     @quotes = Quote.all
 
-    @quote = Quote.new(content: params[:text], userSender: params[:user_name])
+    a = "foobar"
+    a.slice! "foo"
+    => "foo"
+    a
+    => "bar"
+
+    username = params[:text].slice! "by @"
+    params[:text].slice! "by @"
+
+
+    @quote = Quote.new(content: params[:text], userSender: username )0
     @quote.save();
   end
 
