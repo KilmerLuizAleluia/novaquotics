@@ -15,7 +15,7 @@ class QuotesController < ApplicationController
   # GET /quotes
   # GET /quotes.json
   def index
-    @quotes = Quote.all
+    @quotes = Quote.order('id DESC').all
   end
 
   # DELETE /quotes/1

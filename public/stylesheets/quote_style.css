@@ -1,0 +1,27 @@
+
+.novaquote_section {
+	background-color: #22223B;	
+	background-repeat: repeat-y-x;
+	color: #C9ADA7;
+}
+
+.nova_card {
+	border: 2px;
+	border-color: black;
+	float: left; 
+	margin: 2%;
+	background-repeat: repeat-y-x; 
+	background-color: #9A8C98; 
+	border-radius: 25px;
+	padding: 1%; 
+	color: #F2E9E4;
+	box-shadow: 2px 2px 2px #C9ADA7
+}
+
+.align_right{
+	text-align: right;
+}
+
+.nova_title{
+	font-family: 'Lucida Console';
+}
