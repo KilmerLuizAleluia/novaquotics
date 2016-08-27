@@ -1,28 +1,29 @@
-== README
+== NovaQuotics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+NovaQuotics is a command on slack. Once you use it correctly, you'll save a quote and someone who say it. To use, enter on you slack:
 
-Things you may want to cover:
+<tt>/novaquote "An awesome quote!!" by @SomeMith</tt>
 
-* Ruby version
+You don't need to use the quotes to limit the phrase, and you can have a whitespace beetwen the @ and the myth, it will still works. 
+After entering the command, you can go to "http://novaquotics.herokuapp.com/" and see the novaquotes. It will show the first 12 cards, to prevent that the page won't be "polluted". 
 
-* System dependencies
+* Ruby version: 2.1.5
 
-* Configuration
+* Database (dev and production): postgres
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Runs or HeroKu
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== TODO
+
+* Show the sender slack photo;
+
+* Create a "upvote" and a "downvote" for every card;
+
+* Make a rank with most upvoted, and highlitgh it;
+
+* Create a rank for the user that most send phrase and who most said the phrases;
+
+* Change refresh to rerender with ajax;
+
+
