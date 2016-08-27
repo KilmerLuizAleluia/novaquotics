@@ -26,4 +26,4 @@ After entering the command, you can go to "http://novaquotics.herokuapp.com/" an
 
 * Change refresh to rerender with ajax;
 
-
+Author: Kilmer Luiz Aleluia
